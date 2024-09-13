@@ -1,8 +1,8 @@
 import discord
 from discord import app_commands
 
-id_do_servidor = 1250949730041856060  # Coloque aqui o ID do seu servidor
-canal_beneficios = 1251014963615502359  # ID do canal onde estão os benefícios
+id_do_servidor =   # Coloque aqui o ID do seu servidor
+canal_beneficios =   # ID do canal onde estão os benefícios
 
 
 class Client(discord.Client):
@@ -25,7 +25,7 @@ class Client(discord.Client):
         if before.premium_since is None and after.premium_since is not None:
             try:
                 await after.send(
-                    f'Obrigado por impulsionar o servidor Draconic Hunters! Veja os benefícios em <#{canal_beneficios}>'
+                    f'Obrigado por impulsionar o servidor  ! Veja os benefícios em <#{canal_beneficios}>'
                 )
             except discord.Forbidden:
                 pass  # Ignorar falhas ao enviar mensagens
